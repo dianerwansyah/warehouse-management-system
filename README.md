@@ -24,3 +24,9 @@ Warehouse Management System adalah aplikasi web yang memungkinkan pengguna untuk
    ```bash
    git clone <repository-url>
    cd warehouse-management-system/backend
+2. **Inisialisasi Modul Go:**:
+   ```bash
+   go mod init warehouse-management-system
+3. **Jalankan Server:**:
+   ```bash
+   go run main.go
