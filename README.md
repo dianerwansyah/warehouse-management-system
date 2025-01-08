@@ -47,7 +47,7 @@ CREATE TABLE products (
 );
 ```
 
-#### b. **Buat Tabel users **
+#### c. **Buat Tabel users**
 
 ```sql
 CREATE TABLE users (
@@ -60,7 +60,7 @@ CREATE TABLE users (
 );
 ```
 
-#### C. **Insert Data Awal **
+#### d. **Insert Data Awal**
 
 ```sql
 -- Insert data ke tabel products (Opsional)
