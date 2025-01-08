@@ -77,30 +77,120 @@ INSERT INTO users (username, password, role) VALUES
 ```
 
 ### 2. Persiapan Back-End (Go)
-1. **Clone Repository**:
+a. **Clone Repository**:
    ```bash
    git clone <repository-url>
    cd warehouse-management-system/backend
    ```
-2. **Inisialisasi Modul Go:**:
+b. **Inisialisasi Modul Go:**:
    ```bash
    go mod init warehouse
    ```
-3. **Jalankan Server:**:
+c. **Jalankan Server:**:
    ```bash
    go run main.go
    ```
 
-### 2. Persiapan Front-End (Vue.js)
-1. **Navigasi ke Folder Front-End:**:
+### 3. Persiapan Front-End (Vue.js)
+a. **Navigasi ke Folder Front-End:**:
    ```bash
     cd warehouse-management-system/frontend
    ```
-2. **Instalasi Dependensi:**:
+b. **Instalasi Dependensi:**:
    ```bash
    npm install
    ```
-3. **Jalankan Server:**:
+c. **Jalankan Server:**:
    ```bash
     npm run serve
    ```
+
+### Dokumentasi API
+1. **Login**:
+Endpoint: /login
+Method: POST
+Request Body:
+ ```bash
+  {
+    "username": "your_username",
+    "password": "your_password"
+  }
+ ```
+Response:
+ ```bash
+  {
+    "token": "your_jwt_token",
+    "user": "data_user",
+  }
+ ```
+
+2. **Get Products**:
+Endpoint: /products/gets
+Method: GET
+Response:
+ ```bash
+   [
+    {
+      "id": 1,
+      "name": "Product A",
+      "sku": "SKU123",
+      "qty": 10,
+      "location": "Warehouse 1",
+      "status": "available"
+    },
+    ...
+  ]
+ ```
+
+3. **Get Product by ID**:
+Endpoint: /products/getbyid/{id}
+Method: GET
+Response:
+ ```bash
+    {
+      "id": 1,
+      "name": "Product A",
+      "sku": "SKU123",
+      "qty": 10,
+      "location": "Warehouse 1",
+      "status": "available"
+    },
+ ```
+
+4. **Add Product**:
+Endpoint: /products/add
+Method: POST
+Request Body:
+ ```bash
+   {
+    "name": "Product A",
+    "sku": "SKU123",
+    "qty": 10,
+    "location": "Warehouse 1",
+    "status": "available"
+  }
+ ```
+
+5. **Update Product**:
+Endpoint: /products/update/{id}
+Method: PUT
+Request Body:
+ ```bash
+  {
+    "name": "Updated Product A",
+    "sku": "SKU123",
+    "qty": 15,
+    "location": "Warehouse 1",
+    "status": "available"
+  }
+ ```
+
+6. **Delete Product**:
+Endpoint: /products/delete/{id}
+Method: DELETE
+Response:
+ ```bash
+  {
+    "message": "Product deleted successfully"
+  }
+ ```
