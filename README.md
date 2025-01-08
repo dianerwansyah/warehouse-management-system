@@ -186,7 +186,7 @@ Request Body:
  ```
 
 6. **Delete Product**:
-Endpoint: /products/delete/{id}![Uploading 1.PNG…]()
+Endpoint: /products/delete/{id}
 
 Method: DELETE
 Response:
