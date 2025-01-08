@@ -186,7 +186,8 @@ Request Body:
  ```
 
 6. **Delete Product**:
-Endpoint: /products/delete/{id}
+Endpoint: /products/delete/{id}![Uploading 1.PNG…]()
+
 Method: DELETE
 Response:
  ```bash
@@ -194,3 +195,24 @@ Response:
     "message": "Product deleted successfully"
   }
  ```
+
+### Index/Login Page
+![image](https://github.com/user-attachments/assets/f4d87ea6-c65c-4922-91f4-d8454267d306)
+
+### Dashboard
+![image](https://github.com/user-attachments/assets/d2217a02-a3ad-404a-b5ba-e523e07b496d)
+
+### List Product
+![image](https://github.com/user-attachments/assets/91d771ef-e3f3-4da3-b633-7b212799a6a7)
+
+### Add Product
+![image](https://github.com/user-attachments/assets/568d390d-e7a1-45cb-94c5-e42f8152a9bc)
+
+### Edit Product
+![image](https://github.com/user-attachments/assets/9f008305-ebc7-4fd7-a85b-38f0bba92dfa)
+
+### Delete Product
+![image](https://github.com/user-attachments/assets/babe4936-f869-4203-b176-31b4f05b1bda)
+
+
+
