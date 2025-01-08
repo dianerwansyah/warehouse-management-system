@@ -60,22 +60,6 @@ CREATE TABLE users (
 );
 ```
 
-#### C. **Insert Data Awal (Opsional)**
-
-```sql
--- Insert data ke tabel products
-INSERT INTO products (name, sku, qty, location, status) VALUES
-('Product A', 'SKU123', 10, 'Warehouse 1', 'available'),
-('Product B', 'SKU124', 5, 'Warehouse 2', 'available'),
-('Product C', 'SKU125', 0, 'Warehouse 1', 'out_of_stock');
-
--- Insert data ke tabel users
-INSERT INTO users (username, password, role) VALUES
-('admin', 'admin_password', 'admin'),
-('manager', 'manager_password', 'manager'),
-('user', 'user_password', 'user');
-```
-
 #### C. **Insert Data Awal **
 
 ```sql
@@ -92,3 +76,31 @@ INSERT INTO users (username, password, role) VALUES
 ('user', 'user_password', 'user');
 ```
 
+### 2. Persiapan Back-End (Go)
+1. **Clone Repository**:
+   ```bash
+   git clone <repository-url>
+   cd warehouse-management-system/backend
+   ```
+2. **Inisialisasi Modul Go:**:
+   ```bash
+   go mod init warehouse
+   ```
+3. **Jalankan Server:**:
+   ```bash
+   go run main.go
+   ```
+
+### 2. Persiapan Front-End (Vue.js)
+1. **Navigasi ke Folder Front-End:**:
+   ```bash
+    cd warehouse-management-system/frontend
+   ```
+2. **Instalasi Dependensi:**:
+   ```bash
+   npm install
+   ```
+3. **Jalankan Server:**:
+   ```bash
+    npm run serve
+   ```
