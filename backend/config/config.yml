@@ -1,0 +1,10 @@
+database:
+  user: "root"
+  password: ""
+  host: "localhost"
+  port: 3306
+  name: "warehouse"
+jwt:
+  secret: "1234"
+server:
+  port: 8080
